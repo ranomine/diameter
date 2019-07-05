@@ -1,0 +1,1 @@
+DiameterHandler handles the initial handshake when establishing a Diameter connection as long as watchdog requests

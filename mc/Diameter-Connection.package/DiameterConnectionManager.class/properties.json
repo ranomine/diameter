@@ -1,0 +1,26 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Diameter-Connection-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"socket",
+		"acceptLoop",
+		"quit",
+		"systemType",
+		"clientConnections",
+		"sem",
+		"on_unhandled_command",
+		"on_unhandled_response",
+		"handlerCreator",
+		"allowedRemoteAddress",
+		"allowedRemotePort",
+		"logger",
+		"connectionName",
+		"port"
+	],
+	"name" : "DiameterConnectionManager",
+	"type" : "normal"
+}

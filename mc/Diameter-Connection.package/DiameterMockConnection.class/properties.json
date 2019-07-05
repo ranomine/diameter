@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "SMPPConnection",
+	"category" : "Diameter-Connection-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"reachable",
+		"sent",
+		"omitResult",
+		"scheduleToSuper",
+		"scheduledCommands"
+	],
+	"name" : "DiameterMockConnection",
+	"type" : "normal"
+}
