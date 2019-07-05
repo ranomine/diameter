@@ -14,8 +14,9 @@
 		"inactivityTimeout",
 		"responseTimeout",
 		"watchdogTimer",
-		"handshakeok",
-		"watchdogTimeout"
+		"watchdogTimeout",
+		"transportConnected",
+		"connectionOpen"
 	],
 	"name" : "DiameterHandler",
 	"type" : "normal"

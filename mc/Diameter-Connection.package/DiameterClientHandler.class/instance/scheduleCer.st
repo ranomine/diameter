@@ -22,7 +22,7 @@ scheduleCer
 	command := DiameterCommand initWith: cerMessage.
 	command
 		onResult: [ :res | 
-			handshakeok := true.
+			connectionOpen := true.
 			self startWatchdog ];
 		onError: [ :err | self linkFailed ];
 		onTimeout: [ self linkFailed ].

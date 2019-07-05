@@ -1,3 +1,3 @@
-as yet unclassified
-connection: aSMPPClientConnection 
-	connection := aSMPPClientConnection 
+accessing
+connection: aClientConnection 
+	connection := aClientConnection 

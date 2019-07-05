@@ -1,5 +1,5 @@
 as yet unclassified
-receviedResponse: aMessage
+receivedResponse: aMessage
 	"Search for a response"
 
 	| seq command |

@@ -1,10 +1,10 @@
 as yet unclassified
 send: aCommand
 	| seq  header message |
-	seq := self nextSequenceNumber.
+	seq := self nextHopByHopId.
 	header := (SMPPPDUHeader new)
-		    sequenceNumber: seq;
-		    commandId: aCommand messageType;
+		    hopByHopId: seq;
+		    commandId: aCommand commandType;
 		    commandStatus: 0;
 		    yourself.
 	message := (SMPPMessage new)

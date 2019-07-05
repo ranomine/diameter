@@ -1,5 +1,5 @@
 as yet unclassified
-nextSequenceNumber
+nextHopByHopId
 	| seq |
 	seq := nextSeq.
 	nextSeq := nextSeq + 1.
