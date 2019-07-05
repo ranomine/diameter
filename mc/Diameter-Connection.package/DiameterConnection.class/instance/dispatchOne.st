@@ -1,10 +1,10 @@
-as yet unclassified
+internal
 dispatchOne
 	| msg |
 	
 	[
 		"Check if the socket is closed?!"
-		msg := SMPPMessage readFrom: socket.
+		msg := DiameterMessage readFrom: socket.
 		msg ifNil: [
 			self scheduleReconnect].
 		handler dispatchMessage: msg
