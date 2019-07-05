@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Diameter-Builder",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"originHostAVPHeader",
+		"originRealmAVPHeader",
+		"diameterFlags",
+		"commandCode",
+		"applicationId",
+		"hopByHopId",
+		"endToEndId",
+		"avpBuilder"
+	],
+	"name" : "DiameterMessageBuilder",
+	"type" : "normal"
+}

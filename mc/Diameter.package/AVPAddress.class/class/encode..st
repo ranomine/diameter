@@ -1,0 +1,3 @@
+codec
+encode: aByteArray
+	^ aByteArray

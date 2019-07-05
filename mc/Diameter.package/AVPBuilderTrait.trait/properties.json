@@ -1,7 +1,5 @@
 {
+	"name" : "AVPBuilderTrait",
 	"commentStamp" : "",
-	"classinstvars" : [ ],
-	"category" : "Diameter-AVP-Base",
-	"instvars" : [ ],
-	"name" : "AVPBuilderTrait"
+	"category" : "Diameter-AVP-Base"
 }

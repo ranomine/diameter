@@ -1,0 +1,4 @@
+as yet unclassified
+vendorSpecificApplicationIdAVPHeader: authApplicationId vendorId: vendorId
+	vendorSpecificApplicationIdAVPHeader :=
+		avpBuilder vendorSpecificApplicationIdAVPHeader: authApplicationId vendorId: vendorId

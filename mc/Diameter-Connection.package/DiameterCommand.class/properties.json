@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Diameter-Connection-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"body",
+		"onTimeout",
+		"onResult",
+		"onError",
+		"timeoutTimer",
+		"connection",
+		"timeout",
+		"onCancel"
+	],
+	"name" : "DiameterCommand",
+	"type" : "normal"
+}

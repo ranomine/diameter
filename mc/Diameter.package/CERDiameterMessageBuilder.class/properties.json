@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "DiameterMessageBuilder",
+	"category" : "Diameter-Builder",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"hostIPAddressAVPHeader",
+		"vendorIdAVPHeader",
+		"productNameAVPHeader",
+		"originStateIdAVPHeader",
+		"supportedVendorIdAVPHeader",
+		"inbandSecurityIdAVPHeader",
+		"authApplicationIdAVPHeader",
+		"vendorSpecificApplicationIdAVPHeader",
+		"firmwareRevisionAVPHeader"
+	],
+	"name" : "CERDiameterMessageBuilder",
+	"type" : "normal"
+}
