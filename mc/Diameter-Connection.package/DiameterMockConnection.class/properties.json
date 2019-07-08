@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "SMPPConnection",
+	"super" : "DiameterConnection",
 	"category" : "Diameter-Connection-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],

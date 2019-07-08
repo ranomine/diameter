@@ -1,6 +1,6 @@
-as yet unclassified
+initialization
 setUp
 	"Set-up"
-	connection := SMPPMockConnection new.
-	handler := SMPPHandler new.
+	connection := DiameterMockConnection new.
+	handler := DiameterHandler new.
 	handler connection: connection.
