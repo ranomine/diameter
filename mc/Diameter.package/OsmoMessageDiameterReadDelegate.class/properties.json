@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "OsmoMessageReadDelegate",
+	"category" : "Diameter-Socket",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"demuxer",
+		"muxer",
+		"dispatcher",
+		"connect_block"
+	],
+	"name" : "OsmoMessageDiameterReadDelegate",
+	"type" : "normal"
+}

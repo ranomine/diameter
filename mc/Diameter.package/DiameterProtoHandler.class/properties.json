@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Diameter-Socket",
+	"classinstvars" : [
+		"handlers"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"token",
+		"muxer"
+	],
+	"name" : "DiameterProtoHandler",
+	"type" : "normal"
+}

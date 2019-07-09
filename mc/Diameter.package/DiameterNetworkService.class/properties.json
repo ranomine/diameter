@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Diameter-Socket",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"on_data",
+		"defaultRoute",
+		"logger",
+		"connectionName"
+	],
+	"name" : "DiameterNetworkService",
+	"type" : "normal"
+}
