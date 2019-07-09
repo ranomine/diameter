@@ -12,17 +12,17 @@ baseline: spec
 			project: 'OsmoLogging' with: [
 				spec
 					className: #ConfigurationOfOsmoLogging;
-					versionString: '2';
+					versionString: '5';
 					repository: 'http://smalltalkhub.com/mc/osmocom/Logging/main/' ];
 			project: 'OsmoNetwork' with: [
 				spec
 					className: #ConfigurationOfOsmoNetwork;
-					versionString: '3';
+					versionString: '7';
 					repository: 'http://smalltalkhub.com/mc/osmocom/Network/main/' ];
 			project: 'OsmoCore' with: [
 				spec
 					className: #ConfigurationOfOsmoCore;
-					versionString: '1';
+					versionString: '6';
 					repository: 'http://smalltalkhub.com/mc/osmocom/Core/main/' ];	   
 	      project: 'PetitParser' with: [
 		      spec
