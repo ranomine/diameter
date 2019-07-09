@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "DiameterNetworkServiceOsmoBase",
+	"super" : "DiameterS6aNetworkServiceOsmoBase",
 	"category" : "Diameter-Socket",
 	"classinstvars" : [ ],
 	"pools" : [ ],

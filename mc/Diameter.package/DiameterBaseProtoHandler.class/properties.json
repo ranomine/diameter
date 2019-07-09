@@ -1,16 +1,17 @@
 {
 	"commentStamp" : "",
-	"super" : "DiameterNetworkService",
+	"super" : "Object",
 	"category" : "Diameter-Socket",
 	"classinstvars" : [
-		"instance"
+		"handlers"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"conn",
-		"rxCounter"
+		"token",
+		"muxer",
+		"connectionIsOpen"
 	],
-	"name" : "DiameterNetworkServiceOsmoBase",
+	"name" : "DiameterBaseProtoHandler",
 	"type" : "normal"
 }
