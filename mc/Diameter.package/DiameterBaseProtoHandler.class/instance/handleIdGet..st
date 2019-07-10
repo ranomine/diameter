@@ -6,4 +6,4 @@ handleIdGet: aMsg
 	msg putLen16: token size + 1.
 	msg putByte: IPAConstants idtagUnitName.
 	msg putByteArray: token asByteArray.
-	muxer nextPut: msg asByteArray with: IPAConstants protocolIPA
+	muxer nextPut: msg asByteArray

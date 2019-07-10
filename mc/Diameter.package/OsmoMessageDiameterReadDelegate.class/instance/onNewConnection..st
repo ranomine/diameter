@@ -14,6 +14,7 @@ onNewConnection: aSocket
    handler := DiameterBaseProtoHandler new
 		    registerOn: dispatcher;
 		    muxer: muxer;
+		    connected;
 		    yourself.
 
 	connect_block ifNotNil: [connect_block value: dispatcher].

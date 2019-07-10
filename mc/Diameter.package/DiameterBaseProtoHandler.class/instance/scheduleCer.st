@@ -26,4 +26,4 @@ scheduleCer
 			self startWatchdog ];
 		onError: [ :err | self linkFailed ];
 		onTimeout: [ self linkFailed ].
-	muxer nextPut: command asByteArray with: DiameterConstants applicationBase
+	muxer nextPut: cerMessage asEncodedMessage
