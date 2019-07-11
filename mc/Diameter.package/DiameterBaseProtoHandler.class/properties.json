@@ -10,7 +10,12 @@
 	"instvars" : [
 		"token",
 		"muxer",
-		"connectionIsOpen"
+		"connectionIsOpen",
+		"pendingCommands",
+		"nextSeq",
+		"watchdogTimeout",
+		"inactivityTimeout",
+		"responseTimeout"
 	],
 	"name" : "DiameterBaseProtoHandler",
 	"type" : "normal"

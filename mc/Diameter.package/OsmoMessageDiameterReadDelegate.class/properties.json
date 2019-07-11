@@ -9,7 +9,9 @@
 		"demuxer",
 		"muxer",
 		"dispatcher",
-		"connect_block"
+		"connect_block",
+		"pendingCommands",
+		"seqNo"
 	],
 	"name" : "OsmoMessageDiameterReadDelegate",
 	"type" : "normal"

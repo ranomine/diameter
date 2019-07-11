@@ -1,3 +1,0 @@
-creation
-initialize
-	^self initializeHandlers
