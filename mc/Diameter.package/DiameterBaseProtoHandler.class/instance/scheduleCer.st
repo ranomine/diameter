@@ -1,6 +1,6 @@
 private
 scheduleCer
-	| command body cerBuilder cerMessage |
+	| command cerBuilder cerMessage |
 	
 	cerBuilder := CERDiameterMessageBuilder new
 		diameterFlags: 16r80;
