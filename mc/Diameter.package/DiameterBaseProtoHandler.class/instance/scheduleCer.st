@@ -5,7 +5,7 @@ scheduleCer
 	cerBuilder := CERDiameterMessageBuilder new
 		diameterFlags: 16r80;
 		applicationId: 0;
-		hopByHopId: 1;
+		hopByHopId: 236545;
 		endToEndId: 1;
 		originHostAVPHeader: 'dev.rh0.sbg.epc.mnc840.mcc310.3gppnetwork.org';
 		originRealmAVPHeader: 'epc.mnc840.mcc310.3gppnetwork.org';
@@ -26,4 +26,4 @@ scheduleCer
 			self startWatchdog ];
 		onError: [ :err | self linkFailed ];
 		onTimeout: [ self linkFailed ].
-	muxer nextPut: cerMessage asEncodedMessage
+	self scheduleCommand: command

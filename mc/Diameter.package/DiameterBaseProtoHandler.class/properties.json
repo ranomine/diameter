@@ -15,7 +15,8 @@
 		"nextSeq",
 		"watchdogTimeout",
 		"inactivityTimeout",
-		"responseTimeout"
+		"responseTimeout",
+		"watchdogTimer"
 	],
 	"name" : "DiameterBaseProtoHandler",
 	"type" : "normal"
