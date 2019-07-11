@@ -1,0 +1,3 @@
+*Diameter
+reconnectTimeout
+	^ reconnectTimeout
