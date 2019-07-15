@@ -9,4 +9,4 @@ handleMsg: aMsg
 			aMsg isError
 				ifTrue: [ command error: aMsg ]
 				ifFalse: [ command result: aMsg ] ]
-		ifFalse: [ DiameterBaseCommands handleCommand: aMsg ]
+		ifFalse: [ DiameterBaseCommands handleCommand: aMsg forHandler: self ]
