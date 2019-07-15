@@ -5,11 +5,10 @@ startWatchdog
 		
 	dwrBuilder := DWRDiameterMessageBuilder new
 		diameterFlags: 16r80;
-		applicationId: 0;
-		hopByHopId: 236545;
+		applicationId: DiameterConstants applicationBase;
 		endToEndId: 1;
-		originHostAVPHeader: 'dev.rh0.sbg.epc.mnc840.mcc310.3gppnetwork.org';
-		originRealmAVPHeader: 'epc.mnc840.mcc310.3gppnetwork.org';
+		originHostAVPHeader: self localHost;
+		originRealmAVPHeader: self localRealm;
 		originStateIdAVPHeader: 1531314099.
 	dwrMessage := dwrBuilder make.
 	

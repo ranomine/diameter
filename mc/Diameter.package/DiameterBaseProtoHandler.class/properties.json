@@ -16,7 +16,9 @@
 		"watchdogTimeout",
 		"inactivityTimeout",
 		"responseTimeout",
-		"watchdogTimer"
+		"watchdogTimer",
+		"localHost",
+		"localRealm"
 	],
 	"name" : "DiameterBaseProtoHandler",
 	"type" : "normal"

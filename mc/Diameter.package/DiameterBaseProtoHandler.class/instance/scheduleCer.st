@@ -4,14 +4,13 @@ scheduleCer
 	
 	cerBuilder := CERDiameterMessageBuilder new
 		diameterFlags: 16r80;
-		applicationId: 0;
-		hopByHopId: 236545;
+		applicationId: DiameterConstants applicationBase;
 		endToEndId: 1;
-		originHostAVPHeader: 'dev.rh0.sbg.epc.mnc840.mcc310.3gppnetwork.org';
-		originRealmAVPHeader: 'epc.mnc840.mcc310.3gppnetwork.org';
+		originHostAVPHeader: self localHost;
+		originRealmAVPHeader: self localRealm;
 		hostIPAddressAVPHeader: #(16r00 16r01 16r7f 16r00 16r00 16r01) asByteArray;
 		vendorIdAVPHeader: 10415;
-		productNameAVPHeader: 'go-diameter-s6a';
+		productNameAVPHeader: 'osmo-diameter';
 		originStateIdAVPHeader: 1531314099;
 		supportedVendorIdAVPHeader: 10415;
 		inbandSecurityIdAVPHeader: 0;
