@@ -1,4 +1,4 @@
-*Diameter
+as yet unclassified
 initialize
 	super initialize.
 	started := false.
