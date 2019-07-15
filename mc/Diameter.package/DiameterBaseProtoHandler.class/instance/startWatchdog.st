@@ -7,8 +7,8 @@ startWatchdog
 		diameterFlags: 16r80;
 		applicationId: DiameterConstants applicationBase;
 		endToEndId: 1;
-		originHostAVPHeader: self localHost;
-		originRealmAVPHeader: self localRealm;
+		originHostAVPHeader: diameterConnection localHost;
+		originRealmAVPHeader: diameterConnection localRealm;
 		originStateIdAVPHeader: 1531314099.
 	dwrMessage := dwrBuilder make.
 	

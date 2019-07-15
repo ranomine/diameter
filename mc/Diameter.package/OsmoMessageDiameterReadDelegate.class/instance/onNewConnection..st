@@ -13,8 +13,7 @@ onNewConnection: aSocket
 	handler := DiameterBaseProtoHandler new
 		registerOn: dispatcher;
 		muxer: muxer;
-		localHost: self localHost;
-		localRealm: self localRealm;
+		diameterConnection: self diameterConnection;
 		connected;
 		yourself.
 		

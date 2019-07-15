@@ -6,8 +6,8 @@ scheduleCer
 		diameterFlags: 16r80;
 		applicationId: DiameterConstants applicationBase;
 		endToEndId: 1;
-		originHostAVPHeader: self localHost;
-		originRealmAVPHeader: self localRealm;
+		originHostAVPHeader: diameterConnection localHost;
+		originRealmAVPHeader: diameterConnection localRealm;
 		hostIPAddressAVPHeader: #(16r00 16r01 16r7f 16r00 16r00 16r01) asByteArray;
 		vendorIdAVPHeader: 10415;
 		productNameAVPHeader: 'osmo-diameter';

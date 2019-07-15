@@ -5,8 +5,7 @@ initialize
 		reconnectTimeout: 30;
 		yourself.
 	delegate := OsmoMessageDiameterReadDelegate new
-		localHost: self localHost;
-		localRealm: self localRealm;
+		diameterConnection: self; 
 		yourself.
 	delegate onConnect: [ :dispatcher | self registerOn: dispatcher ].
 	conn readDelegate: delegate

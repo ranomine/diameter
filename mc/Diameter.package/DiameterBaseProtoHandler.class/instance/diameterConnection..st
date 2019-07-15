@@ -1,0 +1,3 @@
+initialize
+diameterConnection: aDiameterConnection
+	diameterConnection := aDiameterConnection
