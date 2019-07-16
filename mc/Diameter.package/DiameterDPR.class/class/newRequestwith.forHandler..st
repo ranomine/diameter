@@ -1,8 +1,8 @@
 accessing
 newRequestwith: aCommand forHandler: aHandler
-| dwaBuilder dwaMessage |
+| dpaBuilder dpaMessage |
 	"We should validate the message"
-	dwaBuilder := DWADiameterMessageBuilder new
+	dpaBuilder := DPADiameterMessageBuilder new
 		diameterFlags: 16r00;
 		applicationId: DiameterConstants applicationBase;
 		endToEndId: aCommand endToEndId;
@@ -11,5 +11,5 @@ newRequestwith: aCommand forHandler: aHandler
 		originHostAVPHeader: aHandler diameterConnection localHost;
 		originRealmAVPHeader: aHandler diameterConnection localRealm.
 	
-	dwaMessage := dwaBuilder make.
-	aHandler directSend: dwaMessage asEncodedMessage
+	dpaMessage := dpaBuilder make.
+	aHandler directSend: dpaMessage asEncodedMessage
