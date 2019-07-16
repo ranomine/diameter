@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DiameterBaseCommands",
+	"category" : "Diameter-Socket",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DiameterCER",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+commandCode
+	^ DiameterConstants cer

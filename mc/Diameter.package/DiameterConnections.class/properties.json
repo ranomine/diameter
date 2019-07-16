@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "DiameterTransactions",
+	"instvars" : [
+		"seqNo",
+		"pendingConnections"
+	],
+	"name" : "DiameterConnections",
 	"type" : "normal"
 }
