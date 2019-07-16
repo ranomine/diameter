@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DiameterMessageBuilder",
+	"category" : "Diameter-Builder",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"originStateIdAVPHeader",
+		"resultCodeAVPHeader"
+	],
+	"name" : "DPADiameterMessageBuilder",
+	"type" : "normal"
+}

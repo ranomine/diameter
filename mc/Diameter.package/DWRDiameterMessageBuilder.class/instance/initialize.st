@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self commandCode: 280.
+	self commandCode: DiameterConstants dwr.
