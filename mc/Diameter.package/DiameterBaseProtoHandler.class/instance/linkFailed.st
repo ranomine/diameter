@@ -1,3 +1,5 @@
 initialize
 linkFailed
-	pendingCommands do: [ :aCommand | aCommand destroy ].	
+	connectionIsOpen := false.
+	watchdogTimer ifNotNil: [ watchdogTimer cancel ].
+	pendingCommands do: [ :aCommand | aCommand cancel ]

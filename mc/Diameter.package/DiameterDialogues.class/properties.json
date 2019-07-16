@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"seqNo",
-		"pendingConnections"
+		"activeDialogues",
+		"endToEndIdPool"
 	],
-	"name" : "DiameterConnections",
+	"name" : "DiameterDialogues",
 	"type" : "normal"
 }

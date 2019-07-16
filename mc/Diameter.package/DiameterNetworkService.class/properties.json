@@ -11,7 +11,8 @@
 		"logger",
 		"connectionName",
 		"localHost",
-		"localRealm"
+		"localRealm",
+		"diameterDialoguesMgr"
 	],
 	"name" : "DiameterNetworkService",
 	"type" : "normal"

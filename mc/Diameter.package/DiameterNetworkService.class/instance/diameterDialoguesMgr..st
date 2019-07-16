@@ -1,0 +1,3 @@
+routing
+diameterDialoguesMgr: aDiameterDialoguesManager
+	diameterDialoguesMgr := aDiameterDialoguesManager

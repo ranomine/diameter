@@ -5,7 +5,7 @@ scheduleCer
 	cerBuilder := CERDiameterMessageBuilder new
 		diameterFlags: 16r80;
 		applicationId: DiameterConstants applicationBase;
-		endToEndId: 1;
+		endToEndId: 899;
 		originHostAVPHeader: diameterConnection localHost;
 		originRealmAVPHeader: diameterConnection localRealm;
 		hostIPAddressAVPHeader: #(16r00 16r01 16r7f 16r00 16r00 16r01) asByteArray;
@@ -18,9 +18,12 @@ scheduleCer
 		firmwareRevisionAVPHeader: 1.
 	cerMessage := cerBuilder make.
 	
+	diameterConnection diameterDialoguesMgr createLocalDialogue: cerMessage.
+	
 	command := DiameterCommand initWith: cerMessage.
 	command
 		onResult: [ :res | 
+			diameterConnection diameterDialoguesMgr removeDialogue: cerMessage.
 			connectionIsOpen := true.
 			self startWatchdog ];
 		onError: [ :err | self linkFailed ];
