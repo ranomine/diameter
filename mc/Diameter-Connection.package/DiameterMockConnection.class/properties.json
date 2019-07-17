@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "DiameterConnection",
+	"super" : "OsmoStreamSocketBase",
 	"category" : "Diameter-Connection-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
