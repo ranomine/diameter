@@ -6,7 +6,7 @@ parseData: aReadStream
 
 	avpFlagVendor ifTrue: [
 		fixedLength := fixedLength + 4.
-		avpVendorId := aReadStream nextUint32].
+		avpVendorId := aReadStream uint32].
 
 	avpData := aReadStream next: len - fixedLength.
 
