@@ -1,0 +1,3 @@
+initialize
+diameterConnection
+	^ diameterConnection

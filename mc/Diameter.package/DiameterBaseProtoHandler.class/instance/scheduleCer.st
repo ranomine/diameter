@@ -4,14 +4,13 @@ scheduleCer
 	
 	cerBuilder := CERDiameterMessageBuilder new
 		diameterFlags: 16r80;
-		applicationId: 0;
-		hopByHopId: 236545;
-		endToEndId: 1;
-		originHostAVPHeader: 'dev.rh0.sbg.epc.mnc840.mcc310.3gppnetwork.org';
-		originRealmAVPHeader: 'epc.mnc840.mcc310.3gppnetwork.org';
+		applicationId: DiameterConstants applicationBase;
+		endToEndId: 899;
+		originHostAVPHeader: diameterConnection localHost;
+		originRealmAVPHeader: diameterConnection localRealm;
 		hostIPAddressAVPHeader: #(16r00 16r01 16r7f 16r00 16r00 16r01) asByteArray;
 		vendorIdAVPHeader: 10415;
-		productNameAVPHeader: 'go-diameter-s6a';
+		productNameAVPHeader: 'osmo-diameter';
 		originStateIdAVPHeader: 1531314099;
 		supportedVendorIdAVPHeader: 10415;
 		inbandSecurityIdAVPHeader: 0;
@@ -19,9 +18,12 @@ scheduleCer
 		firmwareRevisionAVPHeader: 1.
 	cerMessage := cerBuilder make.
 	
+	diameterConnection diameterDialoguesMgr createLocalDialogue: cerMessage.
+	
 	command := DiameterCommand initWith: cerMessage.
 	command
 		onResult: [ :res | 
+			diameterConnection diameterDialoguesMgr removeDialogue: cerMessage.
 			connectionIsOpen := true.
 			self startWatchdog ];
 		onError: [ :err | self linkFailed ];

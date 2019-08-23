@@ -1,0 +1,3 @@
+creation
+diameterConnection: aDiameterConnection
+	diameterConnection := aDiameterConnection

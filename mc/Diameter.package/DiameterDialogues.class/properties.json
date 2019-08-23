@@ -6,14 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"on_data",
-		"defaultRoute",
-		"logger",
-		"connectionName",
-		"localHost",
-		"localRealm",
-		"diameterDialoguesMgr"
+		"activeDialogues",
+		"endToEndIdPool"
 	],
-	"name" : "DiameterNetworkService",
+	"name" : "DiameterDialogues",
 	"type" : "normal"
 }

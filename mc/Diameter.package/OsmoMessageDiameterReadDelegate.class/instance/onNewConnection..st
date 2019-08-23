@@ -1,6 +1,6 @@
 as yet unclassified
 onNewConnection: aSocket
-   | handler |
+	| handler |
 	super onNewConnection: aSocket.
 
 	"Initialize the muxer/demuxer"
@@ -8,13 +8,13 @@ onNewConnection: aSocket
 	muxer := DiameterMuxer initOn: aSocket writeQueue.
 
 	"Initialize the dispatcher and proto handler"
- 	dispatcher := DiameterDispatcher new.
+	dispatcher := DiameterDispatcher new.
 	dispatcher initialize.
-	
-   handler := DiameterBaseProtoHandler new
-		    registerOn: dispatcher;
-		    muxer: muxer;
-		    connected;
-		    yourself.
-
-	connect_block ifNotNil: [connect_block value: dispatcher].
+	handler := DiameterBaseProtoHandler new
+		registerOn: dispatcher;
+		muxer: muxer;
+		diameterConnection: self diameterConnection;
+		connected;
+		yourself.
+		
+	connect_block ifNotNil: [ connect_block value: dispatcher ]

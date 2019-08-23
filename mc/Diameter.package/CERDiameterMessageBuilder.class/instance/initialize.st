@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self commandCode: 257.
+	self commandCode: DiameterConstants cer.

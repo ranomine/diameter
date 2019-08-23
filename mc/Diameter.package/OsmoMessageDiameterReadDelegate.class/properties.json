@@ -11,7 +11,8 @@
 		"dispatcher",
 		"connect_block",
 		"pendingCommands",
-		"seqNo"
+		"seqNo",
+		"diameterConnection"
 	],
 	"name" : "OsmoMessageDiameterReadDelegate",
 	"type" : "normal"

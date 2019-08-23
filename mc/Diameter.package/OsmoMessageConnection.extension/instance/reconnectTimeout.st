@@ -1,3 +1,0 @@
-*Diameter
-reconnectTimeout
-	^ reconnectTimeout

@@ -16,7 +16,8 @@
 		"watchdogTimeout",
 		"inactivityTimeout",
 		"responseTimeout",
-		"watchdogTimer"
+		"watchdogTimer",
+		"diameterConnection"
 	],
 	"name" : "DiameterBaseProtoHandler",
 	"type" : "normal"
