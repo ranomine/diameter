@@ -2,11 +2,11 @@ parsing
 parseFrom: aReadStream
 	| version length |
 	version := aReadStream next.
-	length := aReadStream uint24.
+	length := aReadStream nextUint24.
 	^self basicNew
 		diameterFlags: aReadStream next;
-		commandCode: aReadStream uint24;
-		applicationId: aReadStream uint32;
-		hopByHopId: aReadStream uint32;
-		endToEndId: aReadStream uint32;
+		commandCode: aReadStream nextUint24;
+		applicationId: aReadStream nextUint32;
+		hopByHopId: aReadStream nextUint32;
+		endToEndId: aReadStream nextUint32;
 		parseAvps: (aReadStream next: length - 20) readStream.
