@@ -1,6 +1,6 @@
-as yet unclassified
+initialization
 initialize
 	super initialize.
-	handler := SMPPClientHandler new
+	handler := DiameterClientHandler new
 					connection: self;
 					yourself.

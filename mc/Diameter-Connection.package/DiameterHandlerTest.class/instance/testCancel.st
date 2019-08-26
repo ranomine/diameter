@@ -1,10 +1,10 @@
-as yet unclassified
+tests
 testCancel
 	| command canceled |
 
 	"Schedule a command"
 	canceled := false.
-	command := SMPPCommand new
+	command := DiameterCommand new
 		body: SMPPEnquireLink new;
 		onCancel: [canceled := true];
 		onError: [self halt];

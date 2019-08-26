@@ -15,8 +15,20 @@ next
       |                      End-to-End Identifier                    |
       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
-	| diameterMessage |
-	diameterMessage := DiameterMessage parseFrom: socket.
 
-	"I know about extensions. Check if this is..."
-	^Array with: diameterMessage applicationId with: diameterMessage
+	| size data version applicationId flags commandCode hopByHopId endToEndId header |
+	header := socket next: 20.
+	version := header at: 1.
+	size := header at: 2.
+	size := (size bitShift: 8)	+ (header at: 3	).
+	size := (size bitShift: 8) + (header at: 4).
+
+	flags := socket nextUshort.
+	commandCode := socket nextUint24.
+	applicationId := socket nextUint32.
+	hopByHopId := socket nextUint32.
+	endToEndId := socket nextUint32.	
+	data := (socket next: size - 20) readStream.
+   self halt.
+
+	^Array with: applicationId with: data
