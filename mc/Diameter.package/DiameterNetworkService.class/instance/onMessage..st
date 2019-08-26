@@ -1,5 +1,5 @@
 registration
-onUnitData: aBlock
+onMessage: aBlock
 	"Reported when data has arrived. The callback will include the:
 		calling address
 		called address
