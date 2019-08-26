@@ -1,13 +1,13 @@
 as yet unclassified
-receviedResponse: aMessage
+receivedResponse: aMessage
 	"Search for a response"
 
 	| seq command |
-	seq := aMessage header sequenceNumber.
+	seq := aMessage hopByHopId.
 	command := pendingCommands removeKey: seq
 		    ifAbsent: 
 			[^self unhandledResponse: aMessage].
 
-	aMessage header commandStatus = 0
+	aMessage isRequest
 		ifTrue: [command result: aMessage]
 		ifFalse: [command error: aMessage]

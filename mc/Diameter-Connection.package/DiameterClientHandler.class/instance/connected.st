@@ -1,3 +1,3 @@
 as yet unclassified
 connected
-	self scheduleBindTrx
+	self scheduleCER

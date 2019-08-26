@@ -1,5 +1,5 @@
 as yet unclassified
-respondToEnquire: aMessage
+respondToDWR: aMessage
 	| msg |
 	msg := (SMPPMessage new)
 		    header: ((SMPPPDUHeader new)

@@ -1,0 +1,3 @@
+accessing
+endpointHostRealm
+	^ endpointHostRealm

@@ -1,16 +1,14 @@
 as yet unclassified
-scheduleBindTrx
-	| command body |
-	body := (SMPPBindTransceiver new)
-		    systemId: systemId;
-		    password: password;
+scheduleCER
+	| diameterMessage command |
+	diameterMessage := (SMPPBindTransceiver new)
 		    systemType: systemType;
-		    version: 16r34;
+		    version: 16r01;
 		    numberingPlanIndicator: 0;
 		    typeOfNumber: 0;
 		    addressRange: #[];
 		    yourself.
-	command := SMPPCommand initWith: body.
+	command := DiameterCommand initWith: diameterMessage.
 	command
 		onResult: [:res |
 			boundReceiver := true.

@@ -3,6 +3,6 @@ formatForLogging
 	^String streamContents: [:stream |
 		stream
 			nextPutAll: self class printString;
-			nextPutAll: '(systemId=';
-			nextPutAll: systemId;
+			nextPutAll: '(remoteHostName=';
+			nextPutAll: remoteHostName;
 			nextPut: $)]
