@@ -11,7 +11,8 @@
 		"hopByHopId",
 		"endToEndId",
 		"avps",
-		"messageType"
+		"messageType",
+		"version"
 	],
 	"name" : "DiameterMessage",
 	"commentStamp" : "",

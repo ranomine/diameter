@@ -1,3 +1,5 @@
 internal
 doReceive: aMsg
-	aMsg diameterNetworkServiceDispatch: self.
+	| msg |
+	msg := DiameterMessage decode: aMsg.
+	msg diameterNetworkServiceDispatch: self.
