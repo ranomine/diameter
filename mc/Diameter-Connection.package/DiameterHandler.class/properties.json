@@ -1,0 +1,27 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Diameter-Connection",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"on_unhandled_command",
+		"on_unhandled_response",
+		"password",
+		"nextSeq",
+		"pendingCommands",
+		"connection",
+		"systemId",
+		"systemType",
+		"enquireLinkTimeout",
+		"inactivityTimeout",
+		"responseTimeout",
+		"enquireLinkTimer",
+		"boundReceiver",
+		"boundSender",
+		"role"
+	],
+	"name" : "DiameterHandler",
+	"type" : "normal"
+}

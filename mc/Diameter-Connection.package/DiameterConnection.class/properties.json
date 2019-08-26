@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "OsmoStreamSocketBase",
+	"category" : "Diameter-Connection",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"writeQueue",
+		"handler",
+		"onConnectionClosed",
+		"connectionName"
+	],
+	"name" : "DiameterConnection",
+	"type" : "normal"
+}

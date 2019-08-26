@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LogArea",
+	"category" : "Diameter-Connection-Logging",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LogAreaDiameterConnection",
+	"type" : "normal"
+}

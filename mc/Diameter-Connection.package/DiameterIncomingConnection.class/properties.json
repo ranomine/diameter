@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DiameterConnection",
+	"category" : "Diameter-Connection",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"onAuthTimeout",
+		"isAuthenticated"
+	],
+	"name" : "DiameterIncomingConnection",
+	"type" : "normal"
+}

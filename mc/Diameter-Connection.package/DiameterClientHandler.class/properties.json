@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DiameterHandler",
+	"category" : "Diameter-Connection",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DiameterClientHandler",
+	"type" : "normal"
+}

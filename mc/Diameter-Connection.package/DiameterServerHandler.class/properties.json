@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "DiameterHandler",
+	"category" : "Diameter-Connection",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"isAuthenticated",
+		"onAuthTimeout",
+		"sessionInitTimeout"
+	],
+	"name" : "DiameterServerHandler",
+	"type" : "normal"
+}
