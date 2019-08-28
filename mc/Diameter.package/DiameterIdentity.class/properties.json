@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Diameter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"host",
+		"realm"
+	],
+	"name" : "DiameterIdentity",
+	"type" : "normal"
+}

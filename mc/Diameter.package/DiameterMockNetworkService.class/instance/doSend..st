@@ -1,5 +1,5 @@
 internal
-doSend: aByteArray to: calledAddr from: callingAddr
+doSend: aByteArray
 	(otherService notNil & autoDispatch) 
 		ifTrue: [
 			sentPackets add: (DiameterMessage parseFrom: aByteArray) data.
