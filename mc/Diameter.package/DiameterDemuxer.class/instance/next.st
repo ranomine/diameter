@@ -22,13 +22,11 @@ next
 	size := header at: 2.
 	size := (size bitShift: 8)	+ (header at: 3	).
 	size := (size bitShift: 8) + (header at: 4).
-
-	flags := socket nextUshort.
-	commandCode := socket nextUint24.
-	applicationId := socket nextUint32.
-	hopByHopId := socket nextUint32.
-	endToEndId := socket nextUint32.	
+   flags := header at: 5.
+   commandCode := header uint24At: 6.
+	applicationId := header unsignedLongAt: 9 bigEndian: true.
+	hopByHopId := header unsignedLongAt: 13 bigEndian: true.
+	endToEndId := header unsignedLongAt: 17 bigEndian: true.
 	data := (socket next: size - 20) readStream.
-   self halt.
 
-	^Array with: applicationId with: data
+	^Array with: applicationId with: (header, data)
