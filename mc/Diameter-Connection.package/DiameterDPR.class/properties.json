@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DiameterBaseCommands",
+	"category" : "Diameter-Connection",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DiameterDPR",
+	"type" : "normal"
+}

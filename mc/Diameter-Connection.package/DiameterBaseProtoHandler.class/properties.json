@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Diameter-Connection",
+	"classinstvars" : [
+		"handlers"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"token",
+		"muxer",
+		"connectionIsOpen",
+		"pendingCommands",
+		"nextSeq",
+		"watchdogTimeout",
+		"inactivityTimeout",
+		"responseTimeout",
+		"watchdogTimer",
+		"diameterConnection"
+	],
+	"name" : "DiameterBaseProtoHandler",
+	"type" : "normal"
+}

@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Diameter-Connection",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"on_data",
+		"defaultRoute",
+		"logger",
+		"connectionName",
+		"localHost",
+		"localRealm",
+		"diameterDialoguesMgr"
+	],
+	"name" : "DiameterNetworkService",
+	"type" : "normal"
+}

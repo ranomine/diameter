@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Diameter-Connection",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"activeDialogues",
+		"endToEndIdPool"
+	],
+	"name" : "DiameterDialogues",
+	"type" : "normal"
+}

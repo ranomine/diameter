@@ -1,3 +1,0 @@
-accessing
-localHost
-	handler localHost
