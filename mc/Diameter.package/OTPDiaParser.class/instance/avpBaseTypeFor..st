@@ -1,5 +1,6 @@
 as yet unclassified
 avpBaseTypeFor: aString 
+
 	aString = 'UTF8String' ifTrue: [
 		^AVPUTF8String].
 	aString = 'OctetString' ifTrue: [

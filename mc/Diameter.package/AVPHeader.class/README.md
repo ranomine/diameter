@@ -1,3 +1,5 @@
+Attribute-Value-Structure (AVP)
+
 I represent the "4.1.  AVP Header" DIAMETER RFC 6733
 
        0                   1                   2                   3
