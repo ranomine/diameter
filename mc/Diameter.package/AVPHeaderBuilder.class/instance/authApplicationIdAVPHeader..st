@@ -1,5 +1,6 @@
 accessing
 authApplicationIdAVPHeader: anInteger
+
 	^AVPHeader new 
 		avpCode: 258;
 		avpFlagMandatory: true;
