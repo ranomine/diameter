@@ -8,7 +8,7 @@ baseline: spec
 				loads: #('Core' 'Tests') ].
 	spec
 		baseline: 'OsmoNetwork'
-		with: [ spec repository: 'github://ranomine/osmocom-network:v10/source' ].
+		with: [ spec repository: 'github://ranomine/osmocom-network:pharo10-migration/source' ].
 	spec package: #Diameter with: [ spec requires: #('PetitParser') ].
 	spec
 		package: #'Diameter-Network'
